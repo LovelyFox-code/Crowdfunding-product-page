@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    // border: 1px solid red;
+  }
+  @media (max-width: 1440px) {
+  }
+  @media (min-width: 375px) {
+  }
+  
+  //colors
+
+$moderateCyan: hsl(176, 50%, 47%);
+$darkCyan: hsl(176, 72%, 28%);
+$white: #ffffff;
+$black: hsl(0, 0%, 0%);
+$darkGray: hsl(0, 0%, 48%);
+  
