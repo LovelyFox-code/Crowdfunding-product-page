@@ -1,5 +1,5 @@
 function burgerMenu() {
-    let links = document.getElementById("links");
+    let links = document.getElementById("overlay");
     let close = document.getElementById("close");
     let open = document.getElementById("open");
     if (links.style.display === "block") {
