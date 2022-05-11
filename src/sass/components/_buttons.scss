@@ -1,0 +1,60 @@
+
+.group-btn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+  }
+  .btn-active {
+    background: $moderateCyan;
+    border-radius: 33.5px;
+    border: none;
+    color: $white;
+    padding: 18px 40px;
+    text-align: center;
+    margin-top: 24px;
+    font-weight: 700;
+    &:hover{
+      background: $darkCyan;
+    }
+  }
+  .btn-disable {
+    @extend .btn-active;
+    color: $black;
+    border: 1px solid $darkGray;
+    background: $white;
+  
+  }
+//bookmarks btn
+  .bookmark {
+    margin-top: 24px;
+    @media (min-width: 600px) {
+      width: 174px;
+      background: rgba(47, 47, 47, 0.096);
+      mix-blend-mode: normal;
+      border-radius: 33.5px;
+      display: flex;
+      align-items: center;
+      padding: 1px;
+      gap: 10px;
+      &:hover{
+        background: rgba(20, 123, 116, 0.05);
+        color: $white;
+      }
+      &:hover > p{
+        color: $darkCyan;
+      } 
+      &:hover ~ circle > svg{
+        fill: $darkCyan;
+      }
+    }
+  
+    p {
+      display: none;
+      @media (min-width: 600px) {
+        display: block;
+        font-weight: 700;
+      } 
+  
+    }
+  }

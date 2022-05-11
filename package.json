@@ -5,7 +5,7 @@
     "main": "public/index.html",
     "author": "5t3ph",
     "scripts": {
-      "build:sass": "sass  --no-source-map src/sass/*.scss:public/css/*.css",
+      "build:sass": "sass  --no-source-map src/sass/*.scss:public/css/style.css",
       "copy:html": "copyfiles -u 1 ./src/*.html public",
       "copy": "npm-run-all --parallel copy:*",
       "watch:html": "onchange 'src/*.html' -- npm run copy:html",
