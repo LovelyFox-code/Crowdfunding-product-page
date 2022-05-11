@@ -1,5 +1,5 @@
 // Get the modal
-let modal = document.getElementById("modal");
+let modal = document.getElementsById("modal");
 
 // Get the button that opens the modal
 let btn = document.getElementById("open-modal");

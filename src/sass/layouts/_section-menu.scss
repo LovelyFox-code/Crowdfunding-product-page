@@ -1,27 +1,22 @@
-
 .section-menu {
   width: 90%;
   margin: auto;
   margin-top: -30px;
-
   @media (min-width: 600px) {
     width: 60%;
     max-width: 730px
   }
 
   &__item {
-    background: #ffffff;
-    border: 1px solid rgba(0, 0, 0, 0.0497193);
+    background: $white;
+    border: 1px solid $gray;
     box-sizing: border-box;
     border-radius: 8px;
     margin: auto;
     padding: 25px;
     margin-bottom: 25px;
-
-    }
-    
-
   }
+}
 
 .about {
   text-align: left;
@@ -31,46 +26,45 @@
   font-size: 14px;
   line-height: 24px;
   color: $darkGray;
-  .section-menu__item {
-    margin-top: 35px;
-    .bold {
-      font-family: "Commissioner";
-      font-style: normal;
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 17px;
-      color: $black;
-    }
-    .hightlight {
-      color: $moderateCyan;
-    }
-    .numbers {
-      font-family: "Commissioner";
-      font-style: normal;
-      font-weight: 700;
-      font-size: 24px;
-      color: $black;
-      span {
-        font-weight: 400;
-        font-size: 15px;
-        font-style: normal;
-        line-height: 18px;
-        color: $darkGray;
-        margin-left: 8px;
-      }
-    }
-  }
 }
+
 .logo {
   margin-top: -50px;
 }
+
 .numbers {
   margin-top: 24px;
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  color: $black;
+
+  span {
+    font-weight: 400;
+    font-size: 15px;
+    font-style: normal;
+    line-height: 18px;
+    color: $darkGray;
+    margin-left: 8px;
+  }
+
+  @media (min-width: 600px) {
+    text-align: start;
+  }
+
   h1 {
     font-size: 32px;
     line-height: 39px;
   }
+
+  p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
 }
+
 .progress-bar {
   box-sizing: content-box;
   height: 12px;
@@ -79,6 +73,7 @@
   background: #2f2f2f11;
   border-radius: 33.5px;
   box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+
   span {
     display: block;
     width: 218.27px;
@@ -89,18 +84,18 @@
     overflow: hidden;
   }
 }
-.line{
+
+.line {
   height: 1px;
-  width: 80px;
+  width: 5rem;
   background: $black;
   mix-blend-mode: normal;
   opacity: 0.15;
-  margin: 25px auto;
+  margin: 15px auto;
+
   @media (min-width: 600px) {
-    height: 53px;
+    height: 3rem;
     width: 1px;
     margin: 0;
   }
 }
-
-

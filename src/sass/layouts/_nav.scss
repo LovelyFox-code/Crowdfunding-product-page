@@ -1,7 +1,5 @@
 
 .nav {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     position: relative;
     padding: 35px 25px;
@@ -9,12 +7,17 @@
     max-width: 1335px;
     &__mobile {
         display: flex;
-        gap: 85%;
+        justify-content: space-between;
         align-items: center;
+        @media (min-width: 600px) {
+        .nav__logo{
+            display: none;
+        }
+    }
         .links {
             display: none;
             background: #ffffff;
-            border: 1px solid rgba(0, 0, 0, 0.0497193);
+            border: 1px solid $gray;
             box-sizing: border-box;
             border-radius: 8px;
             width: 327px;
@@ -40,7 +43,12 @@
     }
 
     &__desktop {
+        display: flex;
+        justify-content: space-between;
         display: none;
+        &__links{
+            display: flex;
+        }
         hr {
             display: none;
         }

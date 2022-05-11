@@ -9,13 +9,12 @@
     right: 7%;
     left: 7%;
     background-color: $white;
-    border: 1px solid rgba(0, 0, 0, 0.0497193);
+    border: 1px solid $gray;
     box-sizing: border-box;
     border-radius: 8px;
     margin: auto;
     padding: 25px;
     margin-bottom: 25px;
-
     @media (min-width: 600px) {
       width: 60%;
       top: 10%;
@@ -36,73 +35,61 @@
 
     &__box {
       background: #ffffff;
-      border: 1px solid rgba(0, 0, 0, 0.0497193);
+      border: 1px solid $gray;
       box-sizing: border-box;
       border-radius: 8px;
       margin: auto;
       padding: 25px;
       margin: 25px auto;
       position: relative;
-
-
-      .radio {
-        &__item {
-          display: flex;
-          align-items: center;
-          max-height: 30px;
-          position: relative;
-          width: 100%;
-          margin-top: 20px;
-
-          .flex-box {
-            @media (min-width: 600px) {
-              display: flex;
-              gap: 10px;
-            }
-          }
-
-          .bold {
-            font-weight: 700;
-            font-size: 14px;
-            line-height: 17px;
-            color: $black;
-
-            &:hover {
-              color: $moderateCyan;
-            }
-          }
-
-          .hightlight {
-            color: $moderateCyan;
-            text-align: center;
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 17px;
-          }
-        }
-
-        &__input {
-          display: none;
-
-          &:checked+.fake:after {
-            opacity: 1;
-          }
-
-          &:checked~.border {
-            opacity: 1;
-          }
-        }
-
-        &__buttons {
-          display: flex;
-          gap: 20px;
-          flex-wrap: wrap;
-        }
-      }
     }
   }
 }
 
+.radio {
+  &__item {
+    display: flex;
+    align-items: center;
+    max-height: 30px;
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    p{
+      margin: 0;
+    }
+    .flex-box {
+      margin: 0;
+      @media (min-width: 600px) {
+        display: flex;
+        gap: 10px;
+      }
+    }
+
+    .bold {
+      &:hover {
+        color: $moderateCyan;
+      }
+    }
+  }
+
+  &__input {
+    display: none;
+
+    &:checked+.fake:after {
+      opacity: 1;
+    }
+
+    &:checked~.border {
+      opacity: 1;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+}
 .modal__content .numbers {
   font-weight: 700;
   color: $black;

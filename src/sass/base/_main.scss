@@ -4,14 +4,11 @@
   font-family: "Commissioner";
   // border: 1px solid red;
 }
-body{
-  width: 100%;
-}
+
 @media (max-width: 1440px) {
 }
 @media (min-width: 375px) {
 }
-
 h1{
   font-weight: 700;
   color: $black;
@@ -66,4 +63,15 @@ a {
 
 .disable {
   opacity: 0.5;
+}
+.bold {
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: $black;
+}
+.hightlight {
+  color: $moderateCyan;
 }
