@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap" rel="stylesheet" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
   <link rel="stylesheet" href="css/style.css">
   <title>Crowdfunding product page</title>
 </head>
@@ -20,15 +20,19 @@
 <body>
   <header class="hero" id="hero">
     <div class="nav">
-      <a href="#home">
-        <svg width="128" height="20" viewBox="0 0 128 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd"
-            d="M79.6393 9.84637V19.6158H75.523V9.84637H73.6844V5.89469H75.523C75.523 2.05278 77.636 -0.252367 82.1915 0.0220549V3.97374C80.6547 3.83653 79.6393 4.30304 79.6393 5.89469H82.1915V9.84637H79.6393ZM68.2449 18.326C67.3393 19.3688 65.9946 20 64.156 20C60.5611 20 57.5973 16.8441 57.5973 12.7553C57.5973 8.66636 60.5611 5.5105 64.156 5.5105C65.9946 5.5105 67.3393 6.14167 68.2449 7.18448V0.406246H72.3612V19.6158H68.2449V18.326ZM13.4741 16.46C12.2941 18.6004 9.96153 20 7.27219 20C3.10097 20 0 16.8441 0 12.7553C0 8.66636 3.10097 5.5105 7.27219 5.5105C9.93409 5.5105 12.2941 6.91006 13.4741 9.02311L9.8792 11.1087C9.41269 10.1482 8.42477 9.57195 7.21731 9.57195C5.43356 9.57195 4.11633 10.8617 4.11633 12.7553C4.11633 14.6488 5.43356 15.9385 7.21731 15.9385C8.42477 15.9385 9.44013 15.3623 9.8792 14.4018L13.4741 16.46ZM18.6392 13.4139V19.6158H14.5228V5.89469H18.6392V8.33705C19.188 6.49842 21.0266 5.62027 22.7555 5.62027V10.2854C21.0541 10.011 18.6392 10.6971 18.6392 13.4139ZM30.1159 20C34.1499 20 37.3881 16.8441 37.3881 12.7553C37.3881 8.66636 34.1499 5.5105 30.1159 5.5105C26.0819 5.5105 22.8437 8.66636 22.8437 12.7553C22.8437 16.8441 26.0819 20 30.1159 20ZM26.96 12.7553C26.96 14.7036 28.3321 15.9934 30.1159 15.9934C31.8996 15.9934 33.2717 14.7036 33.2717 12.7553C33.2717 10.8069 31.8996 9.51707 30.1159 9.51707C28.3321 9.51707 26.96 10.8069 26.96 12.7553ZM45.2973 19.6158L47.4927 12.2887L49.6881 19.6158H53.53L57.9208 5.89469H53.53L51.5542 13.2492L49.4137 5.89469H45.5717L43.4313 13.2492L41.4554 5.89469H37.0647L41.4554 19.6158H45.2973ZM64.9793 16.1032C63.0858 16.1032 61.7137 14.8134 61.7137 12.7553C61.7137 10.6971 63.0858 9.4073 64.9793 9.4073C66.8728 9.4073 68.2449 10.6971 68.2449 12.7553C68.2449 14.8134 66.8728 16.1032 64.9793 16.1032ZM87.9053 20C89.7165 20 91.0886 19.3414 91.8296 18.326V19.6158H95.9459V5.89469H91.8296V13.3864C91.8296 15.3348 90.7867 16.213 89.2774 16.213C87.9602 16.213 86.8899 15.4171 86.8899 13.7157V5.89469H82.7736V14.3195C82.7736 18.0242 85.1336 20 87.9053 20ZM102.346 12.1241V19.6158H98.2295V5.89469H102.346V7.18448C103.087 6.16912 104.459 5.5105 106.27 5.5105C109.042 5.5105 111.402 7.48634 111.402 11.191V19.6158H107.285V11.7948C107.285 10.0934 106.215 9.29753 104.898 9.29753C103.389 9.29753 102.346 10.1757 102.346 12.1241ZM119.366 20C121.204 20 122.549 19.3688 123.455 18.326V19.6158H127.571V0.406246H123.455V7.18448C122.549 6.14167 121.204 5.5105 119.366 5.5105C115.771 5.5105 112.807 8.66636 112.807 12.7553C112.807 16.8441 115.771 20 119.366 20ZM116.924 12.7553C116.924 14.8134 118.296 16.1032 120.189 16.1032C122.083 16.1032 123.455 14.8134 123.455 12.7553C123.455 10.6971 122.083 9.4073 120.189 9.4073C118.296 9.4073 116.924 10.6971 116.924 12.7553Z"
-            fill="white" />
-        </svg>
-      </a>
-      <div id="overlay">
-        <div id="links">
+      <div class="nav__mobile">
+        <div class="nav__logo">
+          <a href="#home">
+            <svg width="128" height="20" viewBox="0 0 128 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M79.6393 9.84637V19.6158H75.523V9.84637H73.6844V5.89469H75.523C75.523 2.05278 77.636 -0.252367 82.1915 0.0220549V3.97374C80.6547 3.83653 79.6393 4.30304 79.6393 5.89469H82.1915V9.84637H79.6393ZM68.2449 18.326C67.3393 19.3688 65.9946 20 64.156 20C60.5611 20 57.5973 16.8441 57.5973 12.7553C57.5973 8.66636 60.5611 5.5105 64.156 5.5105C65.9946 5.5105 67.3393 6.14167 68.2449 7.18448V0.406246H72.3612V19.6158H68.2449V18.326ZM13.4741 16.46C12.2941 18.6004 9.96153 20 7.27219 20C3.10097 20 0 16.8441 0 12.7553C0 8.66636 3.10097 5.5105 7.27219 5.5105C9.93409 5.5105 12.2941 6.91006 13.4741 9.02311L9.8792 11.1087C9.41269 10.1482 8.42477 9.57195 7.21731 9.57195C5.43356 9.57195 4.11633 10.8617 4.11633 12.7553C4.11633 14.6488 5.43356 15.9385 7.21731 15.9385C8.42477 15.9385 9.44013 15.3623 9.8792 14.4018L13.4741 16.46ZM18.6392 13.4139V19.6158H14.5228V5.89469H18.6392V8.33705C19.188 6.49842 21.0266 5.62027 22.7555 5.62027V10.2854C21.0541 10.011 18.6392 10.6971 18.6392 13.4139ZM30.1159 20C34.1499 20 37.3881 16.8441 37.3881 12.7553C37.3881 8.66636 34.1499 5.5105 30.1159 5.5105C26.0819 5.5105 22.8437 8.66636 22.8437 12.7553C22.8437 16.8441 26.0819 20 30.1159 20ZM26.96 12.7553C26.96 14.7036 28.3321 15.9934 30.1159 15.9934C31.8996 15.9934 33.2717 14.7036 33.2717 12.7553C33.2717 10.8069 31.8996 9.51707 30.1159 9.51707C28.3321 9.51707 26.96 10.8069 26.96 12.7553ZM45.2973 19.6158L47.4927 12.2887L49.6881 19.6158H53.53L57.9208 5.89469H53.53L51.5542 13.2492L49.4137 5.89469H45.5717L43.4313 13.2492L41.4554 5.89469H37.0647L41.4554 19.6158H45.2973ZM64.9793 16.1032C63.0858 16.1032 61.7137 14.8134 61.7137 12.7553C61.7137 10.6971 63.0858 9.4073 64.9793 9.4073C66.8728 9.4073 68.2449 10.6971 68.2449 12.7553C68.2449 14.8134 66.8728 16.1032 64.9793 16.1032ZM87.9053 20C89.7165 20 91.0886 19.3414 91.8296 18.326V19.6158H95.9459V5.89469H91.8296V13.3864C91.8296 15.3348 90.7867 16.213 89.2774 16.213C87.9602 16.213 86.8899 15.4171 86.8899 13.7157V5.89469H82.7736V14.3195C82.7736 18.0242 85.1336 20 87.9053 20ZM102.346 12.1241V19.6158H98.2295V5.89469H102.346V7.18448C103.087 6.16912 104.459 5.5105 106.27 5.5105C109.042 5.5105 111.402 7.48634 111.402 11.191V19.6158H107.285V11.7948C107.285 10.0934 106.215 9.29753 104.898 9.29753C103.389 9.29753 102.346 10.1757 102.346 12.1241ZM119.366 20C121.204 20 122.549 19.3688 123.455 18.326V19.6158H127.571V0.406246H123.455V7.18448C122.549 6.14167 121.204 5.5105 119.366 5.5105C115.771 5.5105 112.807 8.66636 112.807 12.7553C112.807 16.8441 115.771 20 119.366 20ZM116.924 12.7553C116.924 14.8134 118.296 16.1032 120.189 16.1032C122.083 16.1032 123.455 14.8134 123.455 12.7553C123.455 10.6971 122.083 9.4073 120.189 9.4073C118.296 9.4073 116.924 10.6971 116.924 12.7553Z"
+                fill="white" />
+            </svg>
+          </a>
+        </div>
+        <div class="overlay">
+        </div>
+        <div class="links">
           <a href="#about">About</a>
           <hr />
           <a href="#discover">Discover</a>
@@ -36,8 +40,23 @@
           <a href="#start">Get Started</a>
           <hr />
         </div>
+        <div class="burger-menu">
+          <a>
+            <svg class="open" width="16" height="15" xmlns="http://www.w3.org/2000/svg">
+              <g fill="#FFF" fill-rule="evenodd">
+                <path d="M0 0h16v3H0zM0 6h16v3H0zM0 12h16v3H0z" />
+              </g>
+            </svg>
+            <svg class="close" width="14" height="15" xmlns="http://www.w3.org/2000/svg">
+              <g fill="#FFF" fill-rule="evenodd">
+                <path d="M2.404.782l11.314 11.314-2.122 2.122L.282 2.904z" />
+                <path d="M.282 12.096L11.596.782l2.122 2.122L2.404 14.218z" />
+              </g>
+            </svg>
+          </a>
+        </div>
       </div>
-      <div class="links-desktop">
+      <div class="nav__desktop">
         <a href="#about">About</a>
         <hr />
         <a href="#discover">Discover</a>
@@ -45,20 +64,6 @@
         <a href="#start">Get Started</a>
         <hr />
       </div>
-
-      <a href="javascript:void(0);" class="icon" onclick="burgerMenu()">
-        <svg id="open" width="16" height="15" xmlns="http://www.w3.org/2000/svg">
-          <g fill="#FFF" fill-rule="evenodd">
-            <path d="M0 0h16v3H0zM0 6h16v3H0zM0 12h16v3H0z" />
-          </g>
-        </svg>
-        <svg id="close" width="14" height="15" xmlns="http://www.w3.org/2000/svg">
-          <g fill="#FFF" fill-rule="evenodd">
-            <path d="M2.404.782l11.314 11.314-2.122 2.122L.282 2.904z" />
-            <path d="M.282 12.096L11.596.782l2.122 2.122L2.404 14.218z" />
-          </g>
-        </svg>
-      </a>
     </div>
   </header>
   <section class="section-menu" id="menu">
@@ -178,144 +183,145 @@
     </div>
   </section>
   <!-- Selection modal start -->
- <section class="overlay" id="modal">
-  <div class="modal-content" >
-    <div>
-      <div class="modal-content__header">
-        <h1>Back this project</h1>
-        <svg id="close" width="15" height="15" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M11.314 0l2.828 2.828L9.9 7.071l4.243 4.243-2.828 2.828L7.07 9.9l-4.243 4.243L0 11.314 4.242 7.07 0 2.828 2.828 0l4.243 4.242L11.314 0z"
-            fill="#000" fill-rule="evenodd" opacity=".4" />
-        </svg>
-      </div>
-      <p>
-        Want to support us in bringing Mastercraft Bamboo Monitor Riser out in
-        the world?
-      </p>
-      <div class="modal-content__box">
-        <label class="radio__item">
-          <input type="radio" class="radio__input" name="radio" />
-          <div class="fake"></div>
-          <div class="border"></div>
-          <p class="bold">Pledge with no reward</p>
-          <p class="hightlight"></p>
-        </label>
+  <section class="modal">
+    <div class="overlay"></div>
+    <div class="modal__content">
+      <div>
+        <div class="modal__content__header">
+          <h1>Back this project</h1>
+          <svg id="close" width="15" height="15" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M11.314 0l2.828 2.828L9.9 7.071l4.243 4.243-2.828 2.828L7.07 9.9l-4.243 4.243L0 11.314 4.242 7.07 0 2.828 2.828 0l4.243 4.242L11.314 0z"
+              fill="#000" fill-rule="evenodd" opacity=".4" />
+          </svg>
+        </div>
         <p>
-          Choose to support us without a reward if you simply believe in our
-          project. As a backer, you will be signed up to receive product
-          updates via email.
+          Want to support us in bringing Mastercraft Bamboo Monitor Riser out in
+          the world?
         </p>
-      </div>
-      <div class="modal-content__box">
-        <label class="radio__item">
-          <input type="radio" class="radio__input" name="radio" />
-          <div class="fake"></div>
-          <div class="border"></div>
-          <div class="flex-box">
-            <p class="bold">Bamboo Stand</p>
-            <p class="hightlight">Pledge $25 or more</p>
-          </div>
-        </label>
+        <div class="modal-content__box">
+          <label class="radio__item">
+            <input type="radio" class="radio__input" name="radio" />
+            <div class="fake"></div>
+            <div class="border"></div>
+            <p class="bold">Pledge with no reward</p>
+            <p class="hightlight"></p>
+          </label>
+          <p>
+            Choose to support us without a reward if you simply believe in our
+            project. As a backer, you will be signed up to receive product
+            updates via email.
+          </p>
+        </div>
+        <div class="modal-content__box">
+          <label class="radio__item">
+            <input type="radio" class="radio__input" name="radio" />
+            <div class="fake"></div>
+            <div class="border"></div>
+            <div class="flex-box">
+              <p class="bold">Bamboo Stand</p>
+              <p class="hightlight">Pledge $25 or more</p>
+            </div>
+          </label>
 
-        <p>
-          You get an ergonomic stand made of natural bamboo. You've helped us
-          launch our promotional campaign, and you’ll be added to a special
-          Backer member list.
-        </p>
-        <p class="numbers">101 <span> left</span></p>
+          <p>
+            You get an ergonomic stand made of natural bamboo. You've helped us
+            launch our promotional campaign, and you’ll be added to a special
+            Backer member list.
+          </p>
+          <p class="numbers">101 <span> left</span></p>
 
-        <!-- Selected pledge start -->
+          <!-- Selected pledge start -->
 
-        <div class="selected-pledge">
-          <hr />
-          <p>Enter your pledge</p>
-          <div class="group-btn">
-            <button class="btn-disable"> <span>$</span> 25</button>
-            <button class="btn-active" id="bamboo">Continue</button>
+          <div class="selected-pledge">
+            <hr />
+            <p>Enter your pledge</p>
+            <div class="group-btn">
+              <button class="btn-disable"> <span>$</span> 25</button>
+              <button class="btn-active" id="bamboo">Continue</button>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="modal-content__box">
-        <label class="radio__item">
-          <input type="radio" class="radio__input" name="radio" />
-          <div class="fake"></div>
-          <div class="border"></div>
-          <div class="flex-box">
-            <p class="bold">Black Edition Stand</p>
-            <p class="hightlight">Pledge $75 or more</p>
-          </div>
-        </label>
-        <p>
-          Choose to support us without a reward if you simply believe in our
-          project. As a backer, you will be signed up to receive product
-          updates via email.
-        </p>
-        <p class="numbers">64 <span> left</span></p>
-        <!-- Selected pledge start -->
+        <div class="modal-content__box">
+          <label class="radio__item">
+            <input type="radio" class="radio__input" name="radio" />
+            <div class="fake"></div>
+            <div class="border"></div>
+            <div class="flex-box">
+              <p class="bold">Black Edition Stand</p>
+              <p class="hightlight">Pledge $75 or more</p>
+            </div>
+          </label>
+          <p>
+            Choose to support us without a reward if you simply believe in our
+            project. As a backer, you will be signed up to receive product
+            updates via email.
+          </p>
+          <p class="numbers">64 <span> left</span></p>
+          <!-- Selected pledge start -->
 
-        <div class="selected-pledge">
-          <hr />
-          <p>Enter your pledge</p>
-          <div class="group-btn">
-            <button class="btn-disable"><span>$</span> 75</button>
-            <button class="btn-active">Continue</button>
+          <div class="selected-pledge">
+            <hr />
+            <p>Enter your pledge</p>
+            <div class="group-btn">
+              <button class="btn-disable"><span>$</span> 75</button>
+              <button class="btn-active">Continue</button>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="modal-content__box disable">
-        <label class="radio__item">
-          <input type="radio" class="radio__input" name="radio" />
-          <div class="fake"></div>
-          <div class="border"></div>
-          <div class="flex-box">
-            <p class="bold">Mahogany Special Edition</p>
-            <p class="hightlight">Pledge $200 or more</p>
-          </div>
-        </label>
-        <p>
-          You get two Special Edition Mahogany stands, a Backer T-Shirt, and a
-          personal thank you. You’ll be added to our Backer member list.
-          Shipping is included.
-        </p>
-        <p class="numbers">0 <span> left</span></p>
-        <!-- Selected pledge start -->
+        <div class="modal-content__box disable">
+          <label class="radio__item">
+            <input type="radio" class="radio__input" name="radio" />
+            <div class="fake"></div>
+            <div class="border"></div>
+            <div class="flex-box">
+              <p class="bold">Mahogany Special Edition</p>
+              <p class="hightlight">Pledge $200 or more</p>
+            </div>
+          </label>
+          <p>
+            You get two Special Edition Mahogany stands, a Backer T-Shirt, and a
+            personal thank you. You’ll be added to our Backer member list.
+            Shipping is included.
+          </p>
+          <p class="numbers">0 <span> left</span></p>
+          <!-- Selected pledge start -->
 
-        <div class="selected-pledge">
-          <hr />
-          <p>Enter your pledge</p>
-          <div class="group-btn">
-            <button class="btn-disable"><span>$</span> 200</button>
-            <button class="btn-active">Continue</button>
+          <div class="selected-pledge">
+            <hr />
+            <p>Enter your pledge</p>
+            <div class="group-btn">
+              <button class="btn-disable"><span>$</span> 200</button>
+              <button class="btn-active">Continue</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
- </section>
+  </section>
 
   <!-- Success modal end -->
- <section class="overlay" id="success">
-  <div class="modal-success" >
-    <div class="group-btn">
-      <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
-        <g fill="none" fill-rule="evenodd">
-          <circle fill="#3CB3AB" cx="32" cy="32" r="32" />
-          <path stroke="#FFF" stroke-width="5" d="M20 31.86L28.093 40 44 24" />
-        </g>
-      </svg>
+  <section class="overlay" id="success">
+    <div class="modal-success">
+      <div class="group-btn">
+        <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+          <g fill="none" fill-rule="evenodd">
+            <circle fill="#3CB3AB" cx="32" cy="32" r="32" />
+            <path stroke="#FFF" stroke-width="5" d="M20 31.86L28.093 40 44 24" />
+          </g>
+        </svg>
+      </div>
+      <h1>Thanks for your support!</h1>
+      <p>
+        Your pledge brings us one step closer to sharing Mastercraft Bamboo
+        Monitor Riser worldwide. You will get an email once our campaign is
+        completed.
+      </p>
+      <div class="group-btn">
+        <button class="btn-active" id="btn-close">Got it!</button>
+      </div>
     </div>
-    <h1>Thanks for your support!</h1>
-    <p>
-      Your pledge brings us one step closer to sharing Mastercraft Bamboo
-      Monitor Riser worldwide. You will get an email once our campaign is
-      completed.
-    </p>
-    <div class="group-btn">
-      <button class="btn-active" id="btn-close">Got it!</button>
-    </div>
-  </div>
- </section>
+  </section>
   <script src="./assets/js/header.js"></script>
   <script src="./assets/js/modal.js"></script>
 </body>
