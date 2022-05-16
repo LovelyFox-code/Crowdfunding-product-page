@@ -5,22 +5,25 @@
   // border: 1px solid red;
 }
 
-@media (max-width: 1440px) {
-}
-@media (min-width: 375px) {
-}
-h1{
+@media (max-width: 1440px) {}
+
+@media (min-width: 375px) {}
+
+h1 {
   font-weight: 700;
   color: $black;
 }
+
 p {
   margin: 8px 0;
   line-height: 24px;
   color: $darkGray;
 }
+
 .center {
   text-align: center;
 }
+
 a {
   font-family: "Commissioner";
   font-style: normal;
@@ -31,14 +34,17 @@ a {
   display: flex;
   align-items: center;
 }
+
 .close {
   display: none;
 }
+
 .open {
   @media (min-width: 600px) {
-      display: none;
+    display: none;
   }
 }
+
 .overlay {
   display: none;
   position: fixed;
@@ -52,8 +58,10 @@ a {
 
   cursor: pointer;
 }
-.flex-box{
+
+.flex-box {
   margin: 10px auto;
+
   @media (min-width: 600px) {
     display: flex;
     justify-content: space-between;
@@ -64,6 +72,7 @@ a {
 .disable {
   opacity: 0.5;
 }
+
 .bold {
   font-family: "Commissioner";
   font-style: normal;
@@ -72,6 +81,15 @@ a {
   line-height: 17px;
   color: $black;
 }
+
 .hightlight {
   color: $moderateCyan;
+}
+input{
+  width: 1.875rem;
+  border: none;
+  outline: none; 
+  text-align: right;
+  color: $black;
+  caret-color: $moderateCyan;
 }

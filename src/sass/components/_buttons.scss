@@ -27,9 +27,17 @@
 
 .btn-disable {
   @extend %btn;
+  padding: 1.125rem 1.25rem;
   color: $black;
   border: 1px solid $darkGray;
   background: $white;
+  @media (min-width: 768px) {
+    padding: 1.125rem 2.25rem;
+  }
+  span{
+    color: $black;
+    opacity: 0.35;
+  }
 
 }
 
@@ -55,14 +63,16 @@
     &:hover>p {
       color: $darkCyan;
     }
+
     &:hover>svg>g>circle {
       fill: $darkCyan;
     }
-  
+
     &:hover>svg>g>path {
       fill: $white;
     }
   }
+
   p {
     display: none;
 

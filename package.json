@@ -3,10 +3,11 @@
     "version": "0.1.0",
     "description": "SASS compile|autoprefix|minimize and live-reload dev server using Browsersync for static HTML",
     "main": "public/index.html",
-    "author": "5t3ph",
+    "author": "Alina",
     "scripts": {
       "build:sass": "sass  --no-source-map src/sass/*.scss:public/css/style.css",
       "copy:html": "copyfiles -u 1 ./src/*.html public",
+      "copy:js": "copyfiles -u 1 ./src/*.js public",
       "copy": "npm-run-all --parallel copy:*",
       "watch:html": "onchange 'src/*.html' -- npm run copy:html",
       "watch:sass": "sass  --no-source-map --watch src/sass:public/css",

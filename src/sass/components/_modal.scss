@@ -1,13 +1,14 @@
-
 .modal {
- display: none;
+  display: none;
+  position: relative;
+
   &__content {
-    width: 85%;
+    width: 90%;
     margin: auto;
     position: absolute;
-    top: 10%;
-    right: 7%;
-    left: 7%;
+    bottom: 1000px;
+    right: 5%;
+    left: 5%;
     background-color: $white;
     border: 1px solid $gray;
     box-sizing: border-box;
@@ -15,16 +16,18 @@
     margin: auto;
     padding: 25px;
     margin-bottom: 25px;
+
     @media (min-width: 600px) {
       width: 60%;
-      top: 10%;
-      right: 20%;
-      left: 20%;
+      bottom: 730px;
     }
 
     .selected-pledge {
+      display: none;
 
-      @media (min-width: 600px) {}
+      @media (min-width: 600px) {
+        display: none;
+      }
     }
 
     &__header {
@@ -46,6 +49,14 @@
   }
 }
 
+.selected {
+  border: 2px solid $moderateCyan;
+
+  .radio__item p {
+    color: $moderateCyan;
+  }
+}
+
 .radio {
   &__item {
     display: flex;
@@ -54,11 +65,14 @@
     position: relative;
     width: 100%;
     margin-top: 20px;
-    p{
+
+    p {
       margin: 0;
     }
+
     .flex-box {
       margin: 0;
+
       @media (min-width: 600px) {
         display: flex;
         gap: 10px;
@@ -90,15 +104,15 @@
     flex-wrap: wrap;
   }
 }
+
 .modal__content .numbers {
   font-weight: 700;
   color: $black;
 
-  @media (min-width: 600px) {
+  @media (min-width: 900px) {
     position: absolute;
-    top: 40px;
+    top: 10%;
     right: 30px;
-
   }
 
   span {
@@ -109,7 +123,21 @@
 
 .modal__success {
   @extend .modal__content;
+  display: none;
   text-align: center;
+  bottom: 125rem;
+  width: clamp(17.4375rem, 31.25rem, 60%);
+  margin-top: 20%;
+  @media (min-width: 768px) {
+    bottom: 1500px;
+  }
+  @media (min-width: 988px) {
+    bottom: 1300px;
+  }
+  h1{
+    margin: 10% 0;
+  }
+
 }
 
 .fake {
