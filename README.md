@@ -33,7 +33,7 @@ Your should be able to:
 
 ### What I learned
 
-```SASS
+```SCSS
 Placeholder selector
 .btn-active {
   @extend %btn;
@@ -46,7 +46,7 @@ Placeholder selector
   }
 }
 ```
-```SASS
+```SCSS
 extend method and fallback function clamp()
 .modal__success {
   @extend .modal__content;
@@ -69,4 +69,4 @@ extend method and fallback function clamp()
 ## Author
 
 - Website - [Alina](#)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@frontentmentor](https://www.frontendmentor.io/profile/yourusername)
