@@ -16,6 +16,7 @@
 .prettierignore
 
 # 
-node-modules/
+node_modules/
 
 public/
+node_modules
