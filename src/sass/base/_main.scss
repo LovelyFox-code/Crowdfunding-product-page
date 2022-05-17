@@ -78,11 +78,29 @@ a {
   cursor: pointer;
 }
 
-
-
 .disable {
-  opacity: 0.5;
+  h3, h1{
+    color: rgba(0, 0, 0, 0.5);
+  }
+  p.hightlight{
+    color:rgba(60, 179, 171, 0.5);
+  }
+  p{
+    color: #bcbcbc;
+  }
+  .numbers span{
+    color: #bcbcbc;
+  }
+  .btn-active:disabled{
+    background-color: #cbcbcb;
+  }
+  .btn-active:disabled:hover{
+    background-color: #cbcbcb;
+  }
+  
 }
+
+
 
 
 
