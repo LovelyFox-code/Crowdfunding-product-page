@@ -3,12 +3,11 @@
   position: relative;
 
   &__content {
-    width: 90%;
-    margin: auto;
+    width: clamp(337px, 90%, 730px);
     position: absolute;
-    bottom: 1000px;
-    right: 5%;
-    left: 5%;
+    top: 60px;
+    right: 0;
+    left: 0;
     background-color: $white;
     border: 1px solid $gray;
     box-sizing: border-box;
@@ -16,19 +15,6 @@
     margin: auto;
     padding: 25px;
     margin-bottom: 25px;
-
-    @media (min-width: 600px) {
-      width: 60%;
-      bottom: 730px;
-    }
-
-    .selected-pledge {
-      display: none;
-
-      @media (min-width: 600px) {
-        display: none;
-      }
-    }
 
     &__header {
       display: flex;
@@ -49,59 +35,15 @@
   }
 }
 
-.selected {
-  border: 2px solid $moderateCyan;
+.modal__success {
+  @extend .modal__content;
+  display: none;
+  text-align: center;
+  width: clamp(17.4375rem, 31.25rem, 60%);
+  margin-top: 30%;
 
-  .radio__item p {
-    color: $moderateCyan;
-  }
-}
-
-.radio {
-  &__item {
-    display: flex;
-    align-items: center;
-    max-height: 30px;
-    position: relative;
-    width: 100%;
-    margin-top: 20px;
-
-    p {
-      margin: 0;
-    }
-
-    .flex-box {
-      margin: 0;
-
-      @media (min-width: 600px) {
-        display: flex;
-        gap: 10px;
-      }
-    }
-
-    .bold {
-      &:hover {
-        color: $moderateCyan;
-      }
-    }
-  }
-
-  &__input {
-    display: none;
-
-    &:checked+.fake:after {
-      opacity: 1;
-    }
-
-    &:checked~.border {
-      opacity: 1;
-    }
-  }
-
-  &__buttons {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
+  h1 {
+    margin: 10% 0;
   }
 }
 
@@ -118,50 +60,5 @@
   span {
     font-weight: normal;
     color: $darkGray;
-  }
-}
-
-.modal__success {
-  @extend .modal__content;
-  display: none;
-  text-align: center;
-  bottom: 125rem;
-  width: clamp(17.4375rem, 31.25rem, 60%);
-  margin-top: 20%;
-  @media (min-width: 768px) {
-    bottom: 1500px;
-  }
-  @media (min-width: 988px) {
-    bottom: 1300px;
-  }
-  h1{
-    margin: 10% 0;
-  }
-
-}
-
-.fake {
-  width: 24px;
-  height: 24px;
-  border-radius: 100%;
-  border: 1px solid $darkGray;
-  transform: translate(0, 0%);
-  margin-right: 15px;
-
-  &:after {
-    position: absolute;
-    content: "";
-    width: 12px;
-    height: 12px;
-    background: $moderateCyan;
-    border-radius: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-  }
-
-  &:after .modal__content__box {
-    border: 1px solid $moderateCyan;
   }
 }

@@ -1,11 +1,7 @@
 .section-menu {
-  width: 90%;
+  width: clamp(337px, 90%, 730px);
   margin: auto;
   margin-top: -30px;
-  @media (min-width: 600px) {
-    width: 60%;
-    max-width: 730px
-  }
 
   &__item {
     background: $white;
@@ -15,6 +11,19 @@
     margin: auto;
     padding: 25px;
     margin-bottom: 25px;
+    &__header{
+      .group-btn{
+        @media (min-width: 600px) {
+          justify-content: space-between;
+          max-width: 90%;
+          margin: auto;
+        }
+      }
+    }
+    &__header-text{
+      max-width: clamp(279px, 80%, 507px);
+      margin: auto;
+    }
   }
 }
 
@@ -26,20 +35,32 @@
   font-size: 14px;
   line-height: 24px;
   color: $darkGray;
+
+  @media (min-width: 600px) {
+    font-size: 16px;
+    line-height: 30;
+  }
 }
 
 .logo {
   margin-top: -50px;
 }
+.container-backed{
+  margin: 10px auto;
 
-.numbers {
+  @media (min-width: 600px) {
+    display: flex;
+    align-items: center;
+  }
+}
+.number {
   margin-top: 24px;
   font-family: "Commissioner";
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   color: $black;
-
+  margin: 0 48px 0 50px ;
   span {
     font-weight: 400;
     font-size: 15px;
@@ -50,7 +71,9 @@
   }
 
   @media (min-width: 600px) {
-    text-align: start;
+    // padding-right: clamp(5%, 30%, 94px );
+    // padding-left: clamp(3%, 10%, 47px);
+    justify-self: start;
   }
 
   h1 {
@@ -66,36 +89,68 @@
 }
 
 .progress-bar {
-  box-sizing: content-box;
   height: 12px;
-  position: relative;
-  margin: 60px 0 20px 0;
-  background: #2f2f2f11;
-  border-radius: 33.5px;
+  margin: 32px 0 20px 0;
   box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
-
-  span {
-    display: block;
-    width: 218.27px;
-    height: 12px;
-    border-radius: 33.5px;
-    background-color: $moderateCyan;
-    position: relative;
-    overflow: hidden;
-  }
+  width: clamp(280px, 90%, 634px);
 }
-
+progress {
+  background-color: $white;
+}
+progress::-webkit-progress-bar {
+  background-color: $background;
+  border-radius: 20px;
+}
+progress::-webkit-progress-value {
+  background-color: $moderateCyan;
+  border-radius: 20px;
+}
+progress::-moz-progress-bar {
+  background-color: $background;
+}
 .line {
   height: 1px;
   width: 5rem;
   background: $black;
   mix-blend-mode: normal;
   opacity: 0.15;
-  margin: 15px auto;
+  margin: 24px auto;
 
   @media (min-width: 600px) {
     height: 3rem;
     width: 1px;
     margin: 0;
+  }
+}
+.numbers {
+
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  color: $black;
+
+  span {
+    font-weight: 400;
+    font-size: 15px;
+    font-style: normal;
+    line-height: 18px;
+    color: $darkGray;
+    margin-left: 8px;
+  }
+
+  @media (min-width: 600px) {
+    // padding-right: clamp(5%, 30%, 94px );
+    // padding-left: clamp(3%, 10%, 47px);
+    justify-self: start;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
   }
 }

@@ -1,17 +1,26 @@
 .group-btn {
   display: flex;
-  justify-content: space-around;
+  gap: 5%;
+  justify-content: center;
   align-items: center;
-  gap: 10px;
+
 }
 
 //placeholder selector
 %btn {
   padding: 18px 40px;
   text-align: center;
-  margin-top: 24px;
   font-weight: 700;
   border-radius: 33.5px;
+  &:disabled{
+    background-color: $darkGray;
+    &:hover{
+      background-color: $darkGray;
+    }
+  }
+  .selected-pledge &{
+    padding: 15px 25px;
+  }
 }
 
 .btn-active {
@@ -19,6 +28,12 @@
   background: $moderateCyan;
   border: none;
   color: $white;
+  .section-menu__item &{
+    padding: 15px 26px;
+  }
+  .section-menu__item__header &{
+    padding: 18px 42px;
+  }
 
   &:hover {
     background: $darkCyan;
@@ -27,12 +42,16 @@
 
 .btn-disable {
   @extend %btn;
-  padding: 1.125rem 1.25rem;
+  padding: 15px 25px;
   color: $black;
   border: 1px solid $darkGray;
   background: $white;
+
   @media (min-width: 768px) {
     padding: 1.125rem 2.25rem;
+  }
+  .pledge-holder{
+    display: flex;
   }
   span{
     color: $black;
@@ -43,11 +62,10 @@
 
 //bookmarks btn
 .bookmark {
-  margin-top: 24px;
 
   @media (min-width: 600px) {
     width: 174px;
-    background: rgba(47, 47, 47, 0.096);
+    background: $background;
     mix-blend-mode: normal;
     border-radius: 33.5px;
     display: flex;

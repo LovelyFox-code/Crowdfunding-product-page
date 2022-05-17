@@ -5,6 +5,10 @@
   // border: 1px solid red;
 }
 
+body {
+  background: $background;
+}
+
 @media (max-width: 1440px) {}
 
 @media (min-width: 375px) {}
@@ -12,16 +16,31 @@
 h1 {
   font-weight: 700;
   color: $black;
+  margin-bottom: 24px;
+}
+
+h2 {
+  font-family: 'Commissioner';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: $black;
+}
+
+h3 {
+  font-family: 'Commissioner';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: $black;
 }
 
 p {
   margin: 8px 0;
   line-height: 24px;
   color: $darkGray;
-}
-
-.center {
-  text-align: center;
 }
 
 a {
@@ -59,36 +78,18 @@ a {
   cursor: pointer;
 }
 
-.flex-box {
-  margin: 10px auto;
 
-  @media (min-width: 600px) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
 
 .disable {
   opacity: 0.5;
 }
 
-.bold {
-  font-family: "Commissioner";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 17px;
-  color: $black;
-}
 
-.hightlight {
-  color: $moderateCyan;
-}
-input{
+
+input {
   width: 1.875rem;
   border: none;
-  outline: none; 
+  outline: none;
   text-align: right;
   color: $black;
   caret-color: $moderateCyan;
