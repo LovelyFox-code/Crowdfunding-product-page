@@ -8,7 +8,6 @@ openMenu.onclick = function () {
   overlay.style.display = "block";
   closeMenu.style.display = "block";
   openMenu.style.display = "none";
-  console.log("clicked");
 };
 closeMenu.onclick = function () {
   closeMenu.style.display = "none";
