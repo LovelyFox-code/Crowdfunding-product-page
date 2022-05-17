@@ -99,7 +99,7 @@
             <h3>Pledge with no reward</h3>
             <p class="hightlight"></p>
           </label>
-          <p>
+          <p class="m-l-40">
             Choose to support us without a reward if you simply believe in our
             project. As a backer, you will be signed up to receive product
             updates via email.
@@ -116,7 +116,7 @@
             </div>
           </label>
 
-          <p>
+          <p class="m-l-40">
             You get an ergonomic stand made of natural bamboo. You've helped us
             launch our promotional campaign, and you’ll be added to a special
             Backer member list.
@@ -149,7 +149,7 @@
               <p class="hightlight">Pledge $75 or more</p>
             </div>
           </label>
-          <p>
+          <p class="m-l-40">
             Choose to support us without a reward if you simply believe in our
             project. As a backer, you will be signed up to receive product
             updates via email.
@@ -159,10 +159,15 @@
 
           <div class="selected-pledge">
             <hr />
-            <p>Enter your pledge</p>
-            <div class="group-btn">
-              <button class="btn-disable m-t-24"><span>$</span> 75</button>
-              <button class="btn-active m-t-24">Continue</button>
+            <div class="selected-pledge__content">
+              <p>Enter your pledge</p>
+              <div class="group-btn">
+                <button class="btn-disable m-t-24">
+                  <div class="pledge-holder"><span>$</span><input type="text" id="pledge" name="pledge" placeholder=" 25">
+                  </div>
+                </button>
+                <button class="btn-active m-t-24" type="submit" value="Submit" id="bamboo">Continue</button>
+              </div>
             </div>
           </div>
         </div>
@@ -176,20 +181,24 @@
               <p class="hightlight">Pledge $200 or more</p>
             </div>
           </label>
-          <p>
+          <p class="m-l-40">
             You get two Special Edition Mahogany stands, a Backer T-Shirt, and a
             personal thank you. You’ll be added to our Backer member list.
             Shipping is included.
           </p>
           <p class="numbers">0 <span> left</span></p>
           <!-- Selected pledge start -->
-
           <div class="selected-pledge">
             <hr />
-            <p>Enter your pledge</p>
-            <div class="group-btn">
-              <input class="btn-disable m-t-24" type="text" id="pledge" name="pledge" placeholder="$ 200">
-              <button class="btn-active m-t-24" type="submit" value="Submit">Continue</button>
+            <div class="selected-pledge__content">
+              <p>Enter your pledge</p>
+              <div class="group-btn">
+                <button class="btn-disable m-t-24">
+                  <div class="pledge-holder"><span>$</span><input type="text" id="pledge" name="pledge" placeholder=" 25">
+                  </div>
+                </button>
+                <button class="btn-active m-t-24" type="submit" value="Submit" id="bamboo">Continue</button>
+              </div>
             </div>
           </div>
         </div>
@@ -199,7 +208,7 @@
       <!-- Success modal end -->
   <section id="success" style="position: relative;">
     <div class="modal__success">
-      <div class="group-btn">
+      <div class="group-btn m-b-50">
         <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
           <g fill="none" fill-rule="evenodd">
             <circle fill="#3CB3AB" cx="32" cy="32" r="32" />
@@ -349,6 +358,8 @@
 
   <script src="./assets/js/header.js"></script>
   <script src="./assets/js/modal.js"></script>
+  <script src="./assets/js/pledge.js"></script>
+  <script src="./assets/js/bookmark.js"></script>
 </body>
 
 </html>
