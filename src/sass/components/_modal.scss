@@ -23,6 +23,7 @@
     }
 
     &__box {
+      max-width: 634px;
       background: #ffffff;
       border: 1px solid $gray;
       box-sizing: border-box;
@@ -31,6 +32,7 @@
       padding: 25px;
       margin: 25px auto;
       position: relative;
+
     }
   }
 }
@@ -39,26 +41,26 @@
   @extend .modal__content;
   display: none;
   text-align: center;
-  width: clamp(17.4375rem, 31.25rem, 60%);
-  margin-top: 30%;
-
+  width: clamp(327px, 50%, 540px );
+  margin-top: 20%;
   h1 {
     margin: 10% 0;
+  }
+  
+  @media (min-width: 600px) {
+    p{
+      line-height: 30px;
+    }
   }
 }
 
 .modal__content .numbers {
   font-weight: 700;
-  color: $black;
-
   @media (min-width: 900px) {
+    font-size: 18px;
     position: absolute;
-    top: 10%;
+    top: 12%;
     right: 30px;
   }
 
-  span {
-    font-weight: normal;
-    color: $darkGray;
-  }
 }

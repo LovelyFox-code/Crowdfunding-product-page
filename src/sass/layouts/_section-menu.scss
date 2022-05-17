@@ -2,7 +2,7 @@
   width: clamp(337px, 90%, 730px);
   margin: auto;
   margin-top: -30px;
-
+  background: $white;
   &__item {
     background: $white;
     border: 1px solid $gray;
@@ -111,9 +111,8 @@ progress::-moz-progress-bar {
 .line {
   height: 1px;
   width: 5rem;
-  background: $black;
+  background: $background;
   mix-blend-mode: normal;
-  opacity: 0.15;
   margin: 24px auto;
 
   @media (min-width: 600px) {
