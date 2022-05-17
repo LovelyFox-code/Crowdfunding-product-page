@@ -57,6 +57,13 @@ extend method and fallback function clamp()
   margin-top: 20%;
 }
 ```
+```SCSS
+parent selector
+.section-menu__item &{
+    padding: 15px 32px;
+}
+```
+
 
 ### Continued development
 
