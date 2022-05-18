@@ -9,33 +9,41 @@ body {
   background: $background;
 }
 
-@media (max-width: 1440px) {}
+
 
 @media (min-width: 375px) {}
 
-$font-size : (24px, 18px, 14px);
+
+$font-size : (20px, 18px, 14px);
+$line-height : (24px, 22px, 17px);
+$font-size-desktop : (28px, 20px, 18px );
 
 @for $i from 1 through length($font-size){
   h#{$i}{
     font-size: nth($font-size , $i);
+    line-height: nth($line-height, $i );
     font-weight: 700;
     font-family: 'Commissioner';
     font-style: normal;
+    color: $black;
   }
 }
+
+@media (min-width: 900px) {
+  @for $i from 1 through length($font-size-desktop){
+    h#{$i}{
+      font-size: nth($font-size-desktop , $i);
+      line-height: nth($line-height, $i );
+      font-weight: 700;
+      font-family: 'Commissioner';
+      font-style: normal;
+      color: $black;
+    }
+  }
+}
+
 h1 {
-  color: $black;
   margin-bottom: 24px;
-}
-
-h2 {
-  line-height: 22px;
-  color: $black;
-}
-
-h3 {
-  line-height: 17px;
-  color: $black;
 }
 
 p {
