@@ -16,7 +16,10 @@ body {
 
 $font-size : (20px, 18px, 14px);
 $line-height : (24px, 22px, 17px);
+$font-size-medium : (24px, 19px, 16px );
+$line-height-medium : (29px, 22px, 18px);
 $font-size-desktop : (28px, 20px, 18px );
+$line-height-desktop : (34px, 24px, 22px);
 
 @for $i from 1 through length($font-size){
   h#{$i}{
@@ -28,12 +31,23 @@ $font-size-desktop : (28px, 20px, 18px );
     color: $black;
   }
 }
-
-@media (min-width: 900px) {
+@media (min-width: 768px) {
+  @for $i from 1 through length($font-size-medium){
+    h#{$i}{
+      font-size: nth($font-size-medium , $i);
+      line-height: nth($line-height-medium, $i );
+      font-weight: 700;
+      font-family: 'Commissioner';
+      font-style: normal;
+      color: $black;
+    }
+  }
+}
+@media (min-width: 992px) {
   @for $i from 1 through length($font-size-desktop){
     h#{$i}{
       font-size: nth($font-size-desktop , $i);
-      line-height: nth($line-height, $i );
+      line-height: nth($line-height-desktop, $i );
       font-weight: 700;
       font-family: 'Commissioner';
       font-style: normal;
