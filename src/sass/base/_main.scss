@@ -13,26 +13,27 @@ body {
 
 @media (min-width: 375px) {}
 
+$font-size : (24px, 18px, 14px);
+
+@for $i from 1 through length($font-size){
+  h#{$i}{
+    font-size: nth($font-size , $i);
+    font-weight: 700;
+    font-family: 'Commissioner';
+    font-style: normal;
+  }
+}
 h1 {
-  font-weight: 700;
   color: $black;
   margin-bottom: 24px;
 }
 
 h2 {
-  font-family: 'Commissioner';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
   line-height: 22px;
   color: $black;
 }
 
 h3 {
-  font-family: 'Commissioner';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
   line-height: 17px;
   color: $black;
 }
