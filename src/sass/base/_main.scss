@@ -102,6 +102,14 @@ a {
 }
 
 .disable {
+  .radio__item{
+   .numbers__desktop {
+      color: rgba(0, 0, 0, 0.5);
+      span {
+        color: #bcbcbc;
+      }
+    }
+  }
   h3, h1{
     color: rgba(0, 0, 0, 0.5);
   }
@@ -120,13 +128,9 @@ a {
   .btn-active:disabled:hover{
     background-color: #cbcbcb;
   }
+
   
 }
-
-
-
-
-
 input {
   width: 1.875rem;
   border: none;
@@ -134,4 +138,5 @@ input {
   text-align: right;
   color: $black;
   caret-color: $moderateCyan;
+  font-weight: 700;
 }
