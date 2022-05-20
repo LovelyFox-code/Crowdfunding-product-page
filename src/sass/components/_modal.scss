@@ -32,7 +32,11 @@
       padding: 25px;
       margin: 25px auto;
       position: relative;
-
+      .m-left{
+        @media (min-width: 768px) {
+          margin-left: 40px;
+        }
+      }
     }
   }
 }
@@ -41,26 +45,40 @@
   @extend .modal__content;
   display: none;
   text-align: center;
-  width: clamp(327px, 50%, 540px );
-  margin-top: 20%;
+  width: clamp(327px, 50%, 540px);
+
   h1 {
     margin: 10% 0;
   }
-  
+
   @media (min-width: 600px) {
-    p{
+    p {
       line-height: 30px;
     }
   }
 }
 
-.modal__content .numbers {
-  font-weight: 700;
-  @media (min-width: 900px) {
-    font-size: 18px;
-    position: absolute;
-    top: 12%;
-    right: 30px;
+.modal__content .numbers__desktop {
+  display: none;
+
+  span {
+    color: $darkGray;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
   }
 
+  @media (min-width: 768px) {
+    font-weight: 700;
+    color: $black;
+    margin-left: auto;
+    display: block;
+  }
+
+}
+
+.modal__content .numbers {
+  @media (min-width: 768px) {
+    display: none;
+  }
 }

@@ -91,56 +91,68 @@
           Want to support us in bringing Mastercraft Bamboo Monitor Riser out in
           the world?
         </p>
-        <div class="modal__content__box">
-          <label class="radio__item">
+        <div class="modal__content__box ">
+          <label class="radio__item" id="no-reward">
             <input type="radio" class="radio__input" name="radio" />
             <div class="fake"></div>
             <div class="border"></div>
             <h3>Pledge with no reward</h3>
             <p class="hightlight"></p>
           </label>
-          <p class="m-l-40">
+          <p class="m-left">
             Choose to support us without a reward if you simply believe in our
             project. As a backer, you will be signed up to receive product
             updates via email.
           </p>
+          <!-- Selected pledge start -->
+
+          <div class="selected-pledge">
+            <hr />
+            <div class="selected-pledge__content flex-end">
+              
+              <div class="group-btn" onclick="openNoRewardSuccess()">
+                <button class="btn-active m-t-24 " type="submit" value="Submit">Continue</button>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="modal__content__box">
-          <label class="radio__item">
+          <label class="radio__item" >
             <input type="radio" class="radio__input" name="radio" />
             <div class="fake"></div>
             <div class="border"></div>
             <div class="flex-box">
               <h3>Bamboo Stand</h3>
               <p class="hightlight">Pledge $25 or more</p>
+              
             </div>
+            <p class="numbers__desktop">101 <span> left</span></p>
           </label>
 
-          <p class="m-l-40">
+          <p class="m-left">
             You get an ergonomic stand made of natural bamboo. You've helped us
             launch our promotional campaign, and you’ll be added to a special
             Backer member list.
           </p>
           <p class="numbers">101 <span> left</span></p>
-
           <!-- Selected pledge start -->
 
           <div class="selected-pledge">
             <hr />
             <div class="selected-pledge__content">
               <p>Enter your pledge</p>
-              <div class="group-btn">
-                <button class="btn-disable m-t-24">
-                  <div class="pledge-holder"><span>$</span><input type="text" id="pledge" name="pledge" placeholder=" 25">
+              <form div class="group-btn" onsubmit="openBambooSuccess()">
+                <div class="btn-disable m-t-24">
+                  <div class="pledge-holder"><span>$</span><input type="number"  name="pledge" value="25" min="25">
                   </div>
-                </button>
-                <button class="btn-active m-t-24" type="submit" value="Submit" id="bamboo">Continue</button>
-              </div>
+                </div>
+                <button class="btn-active m-t-24" type="submit" value="Submit" >Continue</button>
+              </form>
             </div>
           </div>
         </div>
         <div class="modal__content__box">
-          <label class="radio__item">
+          <label class="radio__item" >
             <input type="radio" class="radio__input" name="radio" />
             <div class="fake"></div>
             <div class="border"></div>
@@ -148,8 +160,9 @@
               <h3>Black Edition Stand</h3>
               <p class="hightlight">Pledge $75 or more</p>
             </div>
+            <p class="numbers__desktop"> 64<span> left</span></p>
           </label>
-          <p class="m-l-40">
+          <p class="m-left">
             Choose to support us without a reward if you simply believe in our
             project. As a backer, you will be signed up to receive product
             updates via email.
@@ -161,13 +174,13 @@
             <hr />
             <div class="selected-pledge__content">
               <p>Enter your pledge</p>
-              <div class="group-btn">
-                <button class="btn-disable m-t-24">
-                  <div class="pledge-holder"><span>$</span><input type="text" id="pledge" name="pledge" placeholder=" 25">
+              <form div class="group-btn" onsubmit="openBlackSuccess()">
+                <div class="btn-disable m-t-24">
+                  <div class="pledge-holder"><span>$</span><input type="number"  name="pledge" value="25" min="25">
                   </div>
-                </button>
-                <button class="btn-active m-t-24" type="submit" value="Submit" id="bamboo">Continue</button>
-              </div>
+                </div>
+                <button class="btn-active m-t-24" type="submit" value="Submit" >Continue</button>
+              </form>
             </div>
           </div>
         </div>
@@ -180,8 +193,9 @@
               <h3>Mahogany Special Edition</h3>
               <p class="hightlight">Pledge $200 or more</p>
             </div>
+            <p class="numbers__desktop">0 <span> left</span></p>
           </label>
-          <p class="m-l-40">
+          <p class="m-left">
             You get two Special Edition Mahogany stands, a Backer T-Shirt, and a
             personal thank you. You’ll be added to our Backer member list.
             Shipping is included.
@@ -192,13 +206,13 @@
             <hr />
             <div class="selected-pledge__content">
               <p>Enter your pledge</p>
-              <div class="group-btn">
+              <form class="group-btn" onclick="openSpecialSuccess()">
                 <button class="btn-disable m-t-24">
-                  <div class="pledge-holder"><span>$</span><input type="text" id="pledge" name="pledge" placeholder=" 25">
+                  <div class="pledge-holder"><span>$</span><input type="text" name="pledge" value="55" min="55">
                   </div>
                 </button>
-                <button class="btn-active m-t-24" type="submit" value="Submit" id="bamboo">Continue</button>
-              </div>
+                <button class="btn-active m-t-24" type="submit" value="Submit">Continue</button>
+              </form>
             </div>
           </div>
         </div>
@@ -218,8 +232,8 @@
       </div>
       <h2>Thanks for your support!</h2>
       <p>
-        Your pledge brings us one step closer to sharing Mastercraft Bamboo
-        Monitor Riser worldwide. You will get an email once our campaign is
+        Your pledge brings us one step closer to sharing Mastercraft <span class="text-success">Bamboo
+          Monitor Riser</span> worldwide. You will get an email once our campaign is
         completed.
       </p>
       <div class="group-btn">
@@ -254,7 +268,7 @@
           </p>
         </div>
         <div class="group-btn mb-s">
-          <button class="btn-active m-t-24" id="open-modal">Back this project</button>
+          <button class="btn-active m-t-24 open-modal" >Back this project</button>
           <div class="bookmark m-t-24">
             <svg class="circle" width="56" height="56" xmlns="http://www.w3.org/2000/svg">
               <g fill="none" fill-rule="evenodd">
@@ -306,7 +320,7 @@
         extra desk space below your computer to allow notepads, pens, and USB
         sticks to be stored under the stand.
       </p>
-      <div class="section-menu__item">
+      <div class="section-menu__item__inside">
         <div class="flex-box">
           <h3>Bamboo Stand</h3>
           <p class="hightlight">Pledge $25 or more</p>
@@ -318,10 +332,10 @@
         </p>
         <div class="flex-box">
           <p class="numbers">101<span>left</span></p>
-          <button class="btn-active m-t-24">Select Reward</button>
+          <button class="btn-active m-t-24 open-modal" >Select Reward</button>
         </div>
       </div>
-      <div class="section-menu__item">
+      <div class="section-menu__item__inside">
         <div class="flex-box">
           <h3>Black Edition Stand</h3>
           <p class="hightlight">Pledge $75 or more</p>
@@ -333,10 +347,10 @@
         </p>
         <div class="flex-box">
           <p class="numbers">64<span>left</span></p>
-          <button class="btn-active m-t-24">Select Reward</button>
+          <button class="btn-active m-t-24 open-modal">Select Reward</button>
         </div>
       </div>
-      <div class="section-menu__item disable">
+      <div class="section-menu__item__inside disable">
         <div class="flex-box">
           <h3>Mahogany Special Edition</h3>
           <p class="hightlight">Pledge $200 or more</p>
@@ -348,7 +362,7 @@
         </p>
         <div class="flex-box">
           <p class="numbers">0<span>left</span></p>
-          <button class="btn-active m-t-24" disabled="true">Out of Stock</button>
+          <button class="btn-active m-t-24 open-modal" disabled="true">Out of Stock</button>
         </div>
       </div>
     </div>
@@ -360,6 +374,9 @@
   <script src="./assets/js/modal.js"></script>
   <script src="./assets/js/pledge.js"></script>
   <script src="./assets/js/bookmark.js"></script>
+  <script src="./assets/js/success-pledge.js"></script>
+  <script src="./assets/js/close-modal-outside.js"></script>
+  <!-- <script src="./assets/js/selected-modal.js"></script> -->
 </body>
 
 </html>
