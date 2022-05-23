@@ -29,7 +29,7 @@
       }
     }
     &__header-text{
-      max-width: clamp(279px, 80%, 507px);
+      max-width: clamp(279px, 85%, 507px);
       margin: auto;
     }
   }
@@ -91,8 +91,6 @@
   }
 
   @media (min-width: 768px) {
-    // padding-right: clamp(5%, 30%, 94px );
-    // padding-left: clamp(3%, 10%, 47px);
     justify-self: start;
   }
 
@@ -128,6 +126,7 @@ progress::-webkit-progress-value {
 progress::-moz-progress-bar {
   background-color: $background;
 }
+
 .line {
   height: 1px;
   width: 5rem;
