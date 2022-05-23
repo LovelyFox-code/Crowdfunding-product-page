@@ -16,26 +16,27 @@ body {
 
 $font-size : (20px, 18px, 14px);
 $line-height : (24px, 22px, 17px);
-$font-size-medium : (24px, 19px, 16px );
+$font-size-medium : (24px, 19px, 16px);
 $line-height-medium : (29px, 22px, 18px);
-$font-size-desktop : (28px, 20px, 18px );
+$font-size-desktop : (28px, 20px, 18px);
 $line-height-desktop : (34px, 24px, 22px);
 
-@for $i from 1 through length($font-size){
-  h#{$i}{
-    font-size: nth($font-size , $i);
-    line-height: nth($line-height, $i );
+@for $i from 1 through length($font-size) {
+  h#{$i} {
+    font-size: nth($font-size, $i);
+    line-height: nth($line-height, $i);
     font-weight: 700;
     font-family: 'Commissioner';
     font-style: normal;
     color: $black;
   }
 }
+
 @media (min-width: 768px) {
-  @for $i from 1 through length($font-size-medium){
-    h#{$i}{
-      font-size: nth($font-size-medium , $i);
-      line-height: nth($line-height-medium, $i );
+  @for $i from 1 through length($font-size-medium) {
+    h#{$i} {
+      font-size: nth($font-size-medium, $i);
+      line-height: nth($line-height-medium, $i);
       font-weight: 700;
       font-family: 'Commissioner';
       font-style: normal;
@@ -43,11 +44,12 @@ $line-height-desktop : (34px, 24px, 22px);
     }
   }
 }
+
 @media (min-width: 992px) {
-  @for $i from 1 through length($font-size-desktop){
-    h#{$i}{
-      font-size: nth($font-size-desktop , $i);
-      line-height: nth($line-height-desktop, $i );
+  @for $i from 1 through length($font-size-desktop) {
+    h#{$i} {
+      font-size: nth($font-size-desktop, $i);
+      line-height: nth($line-height-desktop, $i);
       font-weight: 700;
       font-family: 'Commissioner';
       font-style: normal;
@@ -79,9 +81,14 @@ a {
 
 .close {
   display: none;
+  cursor: pointer;
+}
+#close{
+  cursor: pointer;
 }
 
 .open {
+  cursor: pointer;
   @media (min-width: 600px) {
     display: none;
   }
@@ -102,35 +109,46 @@ a {
 }
 
 .disable {
-  .radio__item{
-   .numbers__desktop {
+  .radio__item {
+    h3 {
+      pointer-events: none;
+    }
+
+    .numbers__desktop {
       color: rgba(0, 0, 0, 0.5);
+
       span {
         color: #bcbcbc;
       }
     }
   }
-  h3, h1{
+
+  h3,
+  h1 {
     color: rgba(0, 0, 0, 0.5);
   }
-  p.hightlight{
-    color:rgba(60, 179, 171, 0.5);
+
+  p.hightlight {
+    color: rgba(60, 179, 171, 0.5);
   }
-  p{
+
+  p {
     color: #bcbcbc;
   }
-  .numbers span{
+
+  .numbers span {
     color: #bcbcbc;
   }
-  .btn-active:disabled{
-    background-color: #cbcbcb;
-  }
-  .btn-active:disabled:hover{
+
+  .btn-active:disabled {
     background-color: #cbcbcb;
   }
 
-  
+  .btn-active:disabled:hover {
+    background-color: #cbcbcb;
+  }
 }
+
 input {
   width: 1.875rem;
   border: none;
@@ -139,4 +157,9 @@ input {
   color: $black;
   caret-color: $moderateCyan;
   font-weight: 700;
+  cursor: pointer;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
