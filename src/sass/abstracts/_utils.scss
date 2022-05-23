@@ -17,7 +17,7 @@
 .flex-box {
     margin: 10px auto;
 
-    @media (min-width: 600px) {
+    @media (min-width: 768px) {
         display: flex;
         justify-content: space-between;
         align-items: center;

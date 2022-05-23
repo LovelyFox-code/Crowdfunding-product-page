@@ -5,7 +5,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  @media (min-width: 600px) {
+  @media (min-width: 768px) {
     background-image: url(../../assets/images/image-hero-desktop.jpg);
     max-height: 400px;
   }

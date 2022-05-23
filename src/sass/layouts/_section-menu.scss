@@ -21,7 +21,7 @@
     }
     &__header{
       .group-btn{
-        @media (min-width: 600px) {
+        @media (min-width: 768px) {
           justify-content: space-between;
           max-width: 90%;
           margin: auto;
@@ -47,7 +47,7 @@
     margin-top: 40px;
     margin-bottom: 25px;
   }
-  @media (min-width: 600px) {
+  @media (min-width: 768px) {
     font-size: 16px;
     line-height: 30;
     h2{
@@ -62,7 +62,7 @@
 .container-backed{
   margin: 10px auto;
 
-  @media (min-width: 600px) {
+  @media (min-width: 768px) {
     display: flex;
     align-items: center;
   }
@@ -76,7 +76,7 @@
   color: $black;
   margin: 0 48px 0 50px ;
   &:first-child{
-    @media (min-width: 600px) {
+    @media (min-width: 768px) {
       margin: 0 48px 0 0;
     }
 
@@ -90,7 +90,7 @@
     margin-left: 8px;
   }
 
-  @media (min-width: 600px) {
+  @media (min-width: 768px) {
     // padding-right: clamp(5%, 30%, 94px );
     // padding-left: clamp(3%, 10%, 47px);
     justify-self: start;
@@ -135,7 +135,7 @@ progress::-moz-progress-bar {
   mix-blend-mode: normal;
   margin: 24px auto;
 
-  @media (min-width: 600px) {
+  @media (min-width: 768px) {
     height: 3rem;
     width: 1px;
     margin: 0;
