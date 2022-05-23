@@ -43,10 +43,16 @@
   font-size: 14px;
   line-height: 24px;
   color: $darkGray;
-
+  h2{
+    margin-top: 40px;
+    margin-bottom: 25px;
+  }
   @media (min-width: 600px) {
     font-size: 16px;
     line-height: 30;
+    h2{
+      margin-bottom: 35px;
+    }
   }
 }
 
@@ -70,7 +76,10 @@
   color: $black;
   margin: 0 48px 0 50px ;
   &:first-child{
-    margin: 0 48px 0 0;
+    @media (min-width: 600px) {
+      margin: 0 48px 0 0;
+    }
+
   }
   span {
     font-weight: 400;

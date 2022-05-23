@@ -6,6 +6,13 @@
       position: relative;
       width: 100%;
       margin-top: 20px;
+      h3{
+        cursor: pointer;
+        &:hover{
+          color: $moderateCyan;
+        }
+      }
+
       .flex-box {
         margin: 0;
   
@@ -48,10 +55,6 @@
   }
   .selected {
     border: 2px solid $moderateCyan;
-  
-    // .radio__item p {
-    //   color: $moderateCyan;
-    // }
     .fake{
       &:after{
         position: absolute;
