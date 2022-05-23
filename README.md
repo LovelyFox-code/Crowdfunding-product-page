@@ -1,35 +1,37 @@
-# Frontend Mentor - Crowdfunding product page
+# Crowdfunding product page
 
-![Design preview for the Crowdfunding product page coding challenge](./design/desktop-preview.jpg)
+### Converting Figma design with HTML / SASS / Vanilla JS. 
+My learning goals were: 
+- Pixel-pretty-close implementation;
+- Working with responsive design;
+- Setting up my build process
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+## Way of working
 
-**HTML, CSS and JavaScript.**
+Frontend mentor is a platform where you can acces to professional designs. So I took one from the `junior` section and implemented in HTML / CSS initially.
+Then, since I was doing SASS course on LinkedIn, I desided to practice my studies on it. 
+Add a build proccess to project envoirment.
+Commited my changes by using git, but I didn't use branches yet. 
 
-## The challenge
+![Design preview](./design/desktop-preview.jpg)
 
-Your should be able to:
+[Design on Figma](https://www.figma.com/file/f0ydxeaYnkeYh2k5AZ1uDQ/crowdfunding-product-page?node-id=0%3A1)
+
+**HTML, SASS and JavaScript.**
+
+## The challenge were to create
 
 - Responsive layout depending on device's screen size
 - Hover states for interactive elements
+- Selection of which pledge to make
+- Updated progress bar and total money raised based on their pledge total after confirming a pledge
+- Number of total backers increment by one after confirming a pledge
+- Toggle whether or not the product is bookmarked
 
 ## Screenshots
 
 ![](./src/assets/images/screenshots/Crowdfunding%20product%20page.png)
-![](./src/assets/images/screenshots/Crowdfunding%20product%20page%20(1).png)
-
-### Links
--
-## My process
-
-### Built with
-
-- Semantic HTML% markup
-- SASS custom properties
-- Flexbox
-- Mobile-first workflow
-- Implement BEM metodologies
-- Use JavaScript
+![](./src/assets/images/screenshots/Crowdfunding%20product%20page%20(1).png){ width: 200px; }
 
 ### What I learned
 
@@ -65,15 +67,3 @@ parent selector
 ```
 
 
-### Continued development
-
-- Make a selection of which pledge to make
-- See an updated progress bar and total money raised based on their pledge total after confirming a pledge
-- See the number of total backers increment by one after confirming a pledge
-- Toggle whether or not the product is bookmarked
-
-
-## Author
-
-- Website - [Alina](#)
-- Frontend Mentor - [@frontentmentor](https://www.frontendmentor.io/profile/yourusername)
