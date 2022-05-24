@@ -141,9 +141,9 @@
             <hr />
             <div class="selected-pledge__content">
               <p>Enter your pledge</p>
-              <form div class="group-btn" onsubmit="openBambooSuccess()">
+              <form div class="group-btn" onsubmit="openModalSuccess(event, 'bamboo')">
                 <div class="btn-disable m-t-24">
-                  <div class="pledge-holder"><span>$</span><input type="number"  name="pledge" value="25" min="25">
+                  <div class="pledge-holder"><span>$</span><input id="bamboo" type="number"  name="pledge" value="25" min="25">
                   </div>
                 </div>
                 <button class="btn-active m-t-24" type="submit" value="Submit" >Continue</button>
@@ -174,9 +174,9 @@
             <hr />
             <div class="selected-pledge__content">
               <p>Enter your pledge</p>
-              <form div class="group-btn" onsubmit="openBlackSuccess()">
+              <form div class="group-btn" onsubmit="openModalSuccess(event, 'black')">
                 <div class="btn-disable m-t-24">
-                  <div class="pledge-holder"><span>$</span><input type="number"  name="pledge" value="75" min="75">
+                  <div class="pledge-holder"><span>$</span><input id="black" type="number"  name="pledge" value="75" min="75">
                   </div>
                 </div>
                 <button class="btn-active m-t-24" type="submit" value="Submit" >Continue</button>
@@ -206,12 +206,12 @@
             <hr />
             <div class="selected-pledge__content">
               <p>Enter your pledge</p>
-              <form class="group-btn" onclick="openSpecialSuccess()">
+              <form class="group-btn" onsubmit="openModalSuccess(event, 'manogony')">
                 <button class="btn-disable m-t-24">
-                  <div class="pledge-holder"><span>$</span><input type="text" name="pledge" value="55" min="55">
+                  <div class="pledge-holder"><span>$</span><input id="mahogany" type="text" name="pledge" value="55" min="55">
                   </div>
                 </button>
-                <button class="btn-active m-t-24" type="submit" value="Submit">Continue</button>
+                <button class="btn-active m-t-24" disabled="true" type="submit" value="Submit">Continue</button>
               </form>
             </div>
           </div>
@@ -285,7 +285,7 @@
     <div class="section-menu__item center">
       <div class="container-backed">
         <div class="number">
-          <h1 id="backed">$ 89,914</h1>
+          <div style="display: flex;"><h1>$</h1><h1 id="backed">89,914 </h1></div>
           <p>of $100,000 backed</p>
         </div>
         <div class="line"></div>
