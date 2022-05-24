@@ -31,8 +31,6 @@ Commited my changes by using git, but I didn't use branches yet.
 ## Screenshots
 
 ![](./src/assets/images/screenshots/Crowdfunding%20product%20page.png)
-![](./src/assets/images/screenshots/Crowdfunding%20product%20page%20(1).png =250x)
-
 ### What I learned
 
 ```SCSS
