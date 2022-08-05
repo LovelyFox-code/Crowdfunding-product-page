@@ -1,7 +1,11 @@
 # Crowdfunding product page
 
-### Converting Figma design with HTML / SASS / Vanilla JS. 
-My learning goals were: 
+[Page link](crowd-funding-page.netlify.app/ "Crowdfunding product page")
+
+### Converting Figma design with HTML / SASS / Vanilla JS.
+
+My learning goals were:
+
 - Pixel-pretty-close implementation;
 - Working with responsive design;
 - Setting up my build process
@@ -9,9 +13,9 @@ My learning goals were:
 ## Way of working
 
 Frontend mentor is a platform where you can acces to professional designs. So I took one from the `junior` section and implemented in HTML / CSS initially.
-Then, since I was doing SASS course on LinkedIn, I desided to practice my studies on it. 
+Then, since I was doing SASS course on LinkedIn, I desided to practice my studies on it.
 Add a build proccess to project envoirment.
-Commited my changes by using git, but I didn't use branches yet. 
+Commited my changes by using git, but I didn't use branches yet.
 
 ![Design preview](./design/desktop-preview.jpg)
 
@@ -31,6 +35,7 @@ Commited my changes by using git, but I didn't use branches yet.
 ## Screenshots
 
 ![](./src/assets/images/screenshots/Crowdfunding%20product%20page.png)
+
 ### What I learned
 
 ```SCSS
@@ -46,6 +51,7 @@ Placeholder selector
   }
 }
 ```
+
 ```SCSS
 extend method and fallback function clamp()
 .modal__success {
@@ -57,11 +63,10 @@ extend method and fallback function clamp()
   margin-top: 20%;
 }
 ```
+
 ```SCSS
 parent selector
 .section-menu__item &{
     padding: 15px 32px;
 }
 ```
-
-
