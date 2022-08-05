@@ -1,6 +1,6 @@
 # Crowdfunding product page
 
-[Page link](crowd-funding-page.netlify.app/ "Crowdfunding product page")
+[Check out here](crowd-funding-page.netlify.app/ "Crowdfunding product page")
 
 ### Converting Figma design with HTML / SASS / Vanilla JS.
 
